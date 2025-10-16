@@ -206,6 +206,57 @@
       </ul>
     </section>
 
+    <!-- GALLERY SECTION (drop-in ready) -->
+    <section style="background:var(--w4-surface); border:1px solid var(--w4-border); border-radius:12px; padding:18px; max-width:1100px; margin:22px auto;">
+      <h2 style="margin:0 0 12px; border-left:4px solid var(--w4-accent); padding-left:10px;">Photo Gallery</h2>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px;">
+        
+        <!-- GALLERY ITEM -->
+        <label style="cursor:pointer; position:relative;">
+          <input type="checkbox" style="display:none;">
+          <img src="https://via.placeholder.com/600x400" alt="Field Day" style="width:100%; height:160px; object-fit:cover; border-radius:10px; border:1px solid var(--w4-border); display:block;">
+          <figcaption style="padding:6px 4px; font-size:14px; color:var(--w4-ink-muted); text-align:center;">Field Day setup at Eastman Park</figcaption>
+          <div style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,.85); justify-content:center; align-items:center; z-index:999;">
+            <img src="https://via.placeholder.com/1200x800" alt="Field Day Large" style="max-width:90%; max-height:85%; border-radius:8px; box-shadow:0 0 20px rgba(0,0,0,.6);">
+          </div>
+        </label>
+
+        <!-- Duplicate items as needed -->
+        <label style="cursor:pointer; position:relative;">
+          <input type="checkbox" style="display:none;">
+          <img src="https://via.placeholder.com/600x400" alt="Fox Hunt" style="width:100%; height:160px; object-fit:cover; border-radius:10px; border:1px solid var(--w4-border); display:block;">
+          <figcaption style="padding:6px 4px; font-size:14px; color:var(--w4-ink-muted); text-align:center;">Fox Hunt crew tracking the hidden transmitter</figcaption>
+          <div style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,.85); justify-content:center; align-items:center; z-index:999;">
+            <img src="https://via.placeholder.com/1200x800" alt="Fox Hunt Large" style="max-width:90%; max-height:85%; border-radius:8px; box-shadow:0 0 20px rgba(0,0,0,.6);">
+          </div>
+        </label>
+
+        <label style="cursor:pointer; position:relative;">
+          <input type="checkbox" style="display:none;">
+          <img src="https://via.placeholder.com/600x400" alt="Special Event" style="width:100%; height:160px; object-fit:cover; border-radius:10px; border:1px solid var(--w4-border); display:block;">
+          <figcaption style="padding:6px 4px; font-size:14px; color:var(--w4-ink-muted); text-align:center;">Operating N4I at the Historic Netherland Inn</figcaption>
+          <div style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,.85); justify-content:center; align-items:center; z-index:999;">
+            <img src="https://via.placeholder.com/1200x800" alt="Special Event Large" style="max-width:90%; max-height:85%; border-radius:8px; box-shadow:0 0 20px rgba(0,0,0,.6);">
+          </div>
+        </label>
+
+      </div>
+
+      <p style="margin-top:10px; font-size:14px; color:var(--w4-ink-muted); text-align:center;">
+        More photos available at <a href="https://w4trc.org/gallery" style="color:var(--w4-ink); text-decoration:underline;">w4trc.org/gallery</a>
+      </p>
+
+      <!-- INLINE LIGHTBOX BEHAVIOR -->
+      <style>
+        /* QRZ-safe inline expansion */
+        input[type="checkbox"]:checked + img + figcaption + div {
+          display:flex !important;
+        }
+      </style>
+    </section>
+
+
     <!-- FOOTER -->
     <div style="text-align:center; color:var(--w4-ink-muted); font-size:13px; padding:8px 4px;">
       © 2025 Kingsport Amateur Radio Club • W4TRC • Kingsport, Tennessee
